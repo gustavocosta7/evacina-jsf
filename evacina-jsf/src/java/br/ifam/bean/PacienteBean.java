@@ -87,7 +87,7 @@ public class PacienteBean {
      */
     public String salva(){
         GenericoDAO<Paciente> dao = new GenericoDAO<>();
-        Paciente paciente = new Paciente(sus, nome, sexo, data);
+        Paciente paciente = new Paciente(sus,nome, sexo, data);
         dao.save(paciente);
         return "index.xhtml?faces-redirect=true";
     }
